@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import Login from '../views/LoginView.vue'
+
+// You can specify which plugins you need
+import { Tooltip, Toast, Popover } from 'bootstrap';
 
 const routes = [
   {
@@ -7,6 +11,13 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  {
+    path:'/login',
+    name:'Login',
+    component:Login
+
+  },
+
   {
     path: '/about',
     name: 'about',
